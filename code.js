@@ -20,12 +20,18 @@ $(document).ready(
                 ingredients += $(this).data("price");
             });
 
+            //Price variables
             var selectedRadioButton = $("input[name=size]:checked");
             var size = selectedRadioButton.data("price");
             var delivery = 2;
             var subtotal = ingredients+size;
             var tax = subtotal * .051;
             var total = subtotal + tax + delivery;
+
+            //Customer info variables
+            var name = $("#delivery_1").val();
+            var address = $("#delivery_2").val();
+            var phone = $("#delivery_3").val();
 
             $("#pizza_delivery").hide();
             $("#pizza_confirmation").show();
@@ -35,5 +41,10 @@ $(document).ready(
             $("#calculated_tax").text("Tax: $"+tax.toFixed(2));
             $("#delivery_fee").text("Delivery: $"+delivery.toFixed(2));
             $("#total").text("Total: $"+total.toFixed(2));
+
+            //show address
+            $("#customer_name").text(name);
+            $("#customer_address").text(address);
+            $("#customer_phone").text(phone);
         }
     });
