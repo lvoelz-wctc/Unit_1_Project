@@ -1,0 +1,47 @@
+
+body {
+    padding: 25px;
+    background-color: blanchedalmond;
+}
+
+#intro {
+    margin: auto;
+    margin-bottom: 50px;
+    width: 50%;
+    border: 3px solid green;
+    padding: 20px;
+
+}
+
+.tab-pane {
+    padding: 10px;
+}
+.pizza_forms {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+#shop {
+    background-color: green;
+}
+
+h1 {
+    margin: auto;
+    width: 50%;
+    padding-bottom: 30px;
+}
+
+#pizza_delivery {
+    display:none;
+}
+
+#pizza_confirmation {
+    display:none;
+}
+
+input[type="radio"] {
+    vertical-align: middle;
+}
+

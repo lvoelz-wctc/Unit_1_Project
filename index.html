@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabs</title>
+    <!-- Bootstrap styles first -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Our styles -->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body id="page">
+<h1 id="restaurant_name">Dunbar Pizzeria & Taxidermy</h1>
+<div class="tab-content">
+    <p id="intro">Welcome to Dunbar Pizzeria & Taxidermy! Our establishment offers authentic Italian cuisine alongside
+        a full-service taxidermy shop. For the month of December 2020, get a free Meat Lover's Pizza
+        with every grizzly bear.</p>
+    <img id="pizza" src="Classic-Homemade-Pizza-Dough-close-500x500.jpg"/>
+    <img id="bear" src="bear.jpg"/>
+    <div id="pizza_details" class="pizza_forms">
+        <h2>Choose Pizza Details</h2>
+        <br>
+        <h3 id="size">Size</h3>
+        <form class="button_form" id = "form_size">
+            <input type="radio" name = "size" id="size_1" data-price="7"/>
+            <label for = "size_1">Small: $7</label>
+            <br>
+            <input type="radio" name = "size" id="size_2" data-price="9"/>
+            <label for = "size_2">Medium: $9</label>
+            <br>
+            <input type="radio" name = "size" id="size_3" data-price="12"/>
+            <label for = "size_3">Large: $12</label>
+        </form>
+
+        <br>
+        <h3 id="meats">Meats</h3>
+        <form class="button_form" id="form_meats">
+            <p><b>Meats: $1.50 Each</b></p>
+            <input type="checkbox" name="toppings" id="meats_1" data-price="1.5"/>
+            <label for = "meats_1">Pepperoni</label>
+            <br>
+            <input type="checkbox" name="toppings" id="meats_2" data-price="1.5"/>
+            <label for = "meats_2">Sausage</label>
+            <br>
+            <input type="checkbox" name="toppings" id="meats_3" data-price="1.5"/>
+            <label for = "meats_3">Anchovies</label>
+        </form>
+
+        <br>
+        <h3 id="veggies">Vegetables</h3>
+        <form class="button_form" id="form_veggies">
+            <p><b>Vegetables: $1.00 Each</b></p>
+            <input type="checkbox" name="toppings" id="veggies_1" data-price="1"/>
+            <label for = "meats_1">Mushrooms</label>
+            <br>
+            <input type="checkbox" name="toppings" id="veggies_2" data-price="1"/>
+            <label for = "meats_2">Onions</label>
+            <br>
+            <input type="checkbox" name="toppings" id="veggies_3" data-price="1"/>
+            <label for = "meats_3">Green Peppers</label>
+        </form>
+        <button id = "submit_details">Submit Order</button>
+    </div>
+
+    <div id = "pizza_delivery" class="pizza_forms">
+        <h2>Enter your delivery information</h2>
+        <br>
+        <form id="address_form">
+        <label for = "delivery_1" class="address_form">Name:</label>
+        <input type="text" class="address_input" name="delivery" id="delivery_1" data-delivery="name"/>
+        <br>
+        <label for = "delivery_2" class="address_form" >Address:</label>
+        <input type="text" class="address_input" name="delivery" id="delivery_2" data-delivery="address"/>
+        <br>
+        <label for = "delivery_3" class="address_form">Phone Number:</label>
+        <input type="text" class="address_input" name="delivery" id="delivery_3" data-delivery="phone"/>
+        <br>
+        <button id = "submit_address">Submit Address</button>
+        </form>
+    </div>
+
+    <div id="pizza_confirmation" class="pizza_forms">
+        <h2>Order Confirmation</h2>
+        <h3>Cost</h3>
+        <ul>
+            <li id="subtotal"></li>
+            <li id="calculated_tax"></li>
+            <li id="delivery_fee"></li>
+            <li id="total"></li>
+        </ul>
+    </div>
+
+
+</div>
+
+<!-- jQuery first -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!-- Popper and Bootstrap second -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Our code last -->
+<script src="code.js"></script>
+
+</body>
+
+</html>

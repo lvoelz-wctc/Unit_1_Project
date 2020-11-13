@@ -1,0 +1,73 @@
+body {
+    padding: 25px;
+    background-color: blanchedalmond;
+}
+
+#intro {
+    margin: auto;
+    margin-bottom: 50px;
+    width: 50%;
+    border: 3px solid red;
+    padding: 20px;
+
+}
+
+.tab-pane {
+    padding: 10px;
+}
+.pizza_forms {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+#shop {
+    background-color: green;
+}
+
+h1 {
+    margin: auto;
+    width: 50%;
+    padding-bottom: 30px;
+}
+
+#pizza_delivery {
+    display:none;
+}
+
+#pizza_confirmation {
+    display:none;
+}
+
+.address_form {
+    width:150px;
+}
+
+.address_input {
+    width: 300px;
+}
+
+#pizza {
+    position: absolute;
+    border:1px solid black;
+    left:50px;
+    top:50px;
+    box-sizing:border-box;
+    width: 200px;
+    height: 200px;
+}
+
+#bear {
+    position: absolute;
+    border:1px solid black;
+    right:50px;
+    top:50px;
+    box-sizing:border-box;
+    width: 200px;
+    height: 200px;
+}
+
+#restaurant_name {
+    font-family:'Monotype Corsiva','Apple Chancery','ITC Zapf Chancery','URW Chancery L',cursive;
+}
